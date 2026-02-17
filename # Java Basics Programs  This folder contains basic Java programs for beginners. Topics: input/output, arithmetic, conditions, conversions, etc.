@@ -1,0 +1,278 @@
+ 1) HelloWorld.java
+Copy code
+Java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+ 2) PrintName.java
+Copy code
+Java
+public class PrintName {
+    public static void main(String[] args) {
+        System.out.println("My name is Raj");
+    }
+}
+ 3) AddTwoNumbers.java
+Copy code
+Java
+import java.util.Scanner;
+
+public class AddTwoNumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        System.out.println("Sum = " + (a + b));
+        sc.close();
+    }
+}
+ 4) SwapNumbers.java
+Copy code
+Java
+import java.util.Scanner;
+
+public class SwapNumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        int temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("After swap: a=" + a + " b=" + b);
+        sc.close();
+    }
+}
+ 5) SwapWithoutTemp.java
+Copy code
+Java
+import java.util.Scanner;
+
+public class SwapWithoutTemp {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        System.out.println("After swap: a=" + a + " b=" + b);
+        sc.close();
+    }
+}
+ 6) AreaOfCircle.java
+Copy code
+Java
+import java.util.Scanner;
+
+public class AreaOfCircle {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter radius: ");
+        double r = sc.nextDouble();
+
+        double area = Math.PI * r * r;
+        System.out.println("Area = " + area);
+
+        sc.close();
+    }
+}
+ 7) AreaOfRectangle.java
+Copy code
+Java
+import java.util.Scanner;
+
+public class AreaOfRectangle {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter length: ");
+        double l = sc.nextDouble();
+
+        System.out.print("Enter breadth: ");
+        double b = sc.nextDouble();
+
+        System.out.println("Area = " + (l * b));
+        sc.close();
+    }
+}
+8) SimpleInterest.java
+Copy code
+Java
+import java.util.Scanner;
+
+public class SimpleInterest {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter principal: ");
+        double p = sc.nextDouble();
+
+        System.out.print("Enter rate: ");
+        double r = sc.nextDouble();
+
+        System.out.print("Enter time: ");
+        double t = sc.nextDouble();
+
+        double si = (p * r * t) / 100;
+        System.out.println("Simple Interest = " + si);
+
+        sc.close();
+    }
+}
+ 9) CompoundInterest.java
+Copy code
+Java
+import java.util.Scanner;
+
+public class CompoundInterest {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter principal: ");
+        double p = sc.nextDouble();
+
+        System.out.print("Enter rate: ");
+        double r = sc.nextDouble();
+
+        System.out.print("Enter time: ");
+        double t = sc.nextDouble();
+
+        double amount = p * Math.pow((1 + r / 100), t);
+        double ci = amount - p;
+
+        System.out.println("Compound Interest = " + ci);
+        sc.close();
+    }
+}
+ 10) CelsiusToFahrenheit.java
+Copy code
+Java
+import java.util.Scanner;
+
+public class CelsiusToFahrenheit {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Celsius: ");
+        double c = sc.nextDouble();
+
+        double f = (c * 9 / 5) + 32;
+        System.out.println("Fahrenheit = " + f);
+
+        sc.close();
+    }
+}
+ 11) FahrenheitToCelsius.java
+Copy code
+Java
+import java.util.Scanner;
+
+public class FahrenheitToCelsius {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Fahrenheit: ");
+        double f = sc.nextDouble();
+
+        double c = (f - 32) * 5 / 9;
+        System.out.println("Celsius = " + c);
+
+        sc.close();
+    }
+}
+ 12) EvenOdd.java
+Copy code
+Java
+import java.util.Scanner;
+
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number: ");
+        int n = sc.nextInt();
+
+        if (n % 2 == 0) {
+            System.out.println("Even");
+        } else {
+            System.out.println("Odd");
+        }
+
+        sc.close();
+    }
+}
+ 13) PositiveNegative.java
+Copy code
+Java
+import java.util.Scanner;
+
+public class PositiveNegative {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number: ");
+        int n = sc.nextInt();
+
+        if (n > 0) {
+            System.out.println("Positive");
+        } else if (n < 0) {
+            System.out.println("Negative");
+        } else {
+            System.out.println("Zero");
+        }
+
+        sc.close();
+    }
+}
+ 14) LargestOfTwo.java
+Copy code
+Java
+import java.util.Scanner;
+
+public class LargestOfTwo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        if (a > b) {
+            System.out.println("Largest = " + a);
+        } else {
+            System.out.println("Largest = " + b);
+        }
+
+        sc.close();
+    }
+}
+ 15) AsciiValue.java
+Copy code
+Java
+import java.util.Scanner;
+
+public class AsciiValue {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a character: ");
+        char ch = sc.next().charAt(0);
+
+        System.out.println("ASCII = " + (int) ch);
+        sc.close();
+    }
+}
