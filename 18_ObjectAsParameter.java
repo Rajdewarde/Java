@@ -1,0 +1,1 @@
+class TestObj{ int x; TestObj(int x){this.x=x;} void display(TestObj obj){System.out.println(obj.x);} public static void main(String[] args){ TestObj t1=new TestObj(55); t1.display(t1);}}

@@ -1,0 +1,1 @@
+class Parent2{int x=10;} class SuperKeyword extends Parent2{ int x=20; void show(){System.out.println(super.x);} public static void main(String[] args){ SuperKeyword obj=new SuperKeyword(); obj.show();}}

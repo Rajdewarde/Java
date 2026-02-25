@@ -1,0 +1,1 @@
+class CopyConstructor { int x; CopyConstructor(int a){x=a;} CopyConstructor(CopyConstructor o){x=o.x;} public static void main(String[] args){ CopyConstructor o1=new CopyConstructor(100); CopyConstructor o2=new CopyConstructor(o1); System.out.println(o2.x);}}

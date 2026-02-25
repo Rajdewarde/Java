@@ -1,0 +1,1 @@
+class Poly{void show(){System.out.println("Parent");}} class PolymorphismDemo extends Poly{ void show(){System.out.println("Child");} public static void main(String[] args){ Poly obj=new PolymorphismDemo(); obj.show();}}

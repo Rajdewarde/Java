@@ -1,0 +1,1 @@
+class Parent{void show(){System.out.println("Parent Class");}} class InheritanceDemo extends Parent{ public static void main(String[] args){ InheritanceDemo obj=new InheritanceDemo(); obj.show();}}

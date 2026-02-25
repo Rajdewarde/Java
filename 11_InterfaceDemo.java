@@ -1,0 +1,1 @@
+interface Test{void display();} class InterfaceDemo implements Test{ public void display(){System.out.println("Interface Method");} public static void main(String[] args){ InterfaceDemo obj=new InterfaceDemo(); obj.display();}}

@@ -1,0 +1,1 @@
+class MethodDemo { void show(){System.out.println("Method Called");} public static void main(String[] args){ MethodDemo obj=new MethodDemo(); obj.show();}}

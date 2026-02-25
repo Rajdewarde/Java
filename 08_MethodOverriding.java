@@ -1,0 +1,1 @@
+class A{void show(){System.out.println("Class A");}} class MethodOverriding extends A{ void show(){System.out.println("Class B");} public static void main(String[] args){ MethodOverriding obj=new MethodOverriding(); obj.show();}}

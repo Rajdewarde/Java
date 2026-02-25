@@ -1,0 +1,1 @@
+class StaticKeyword{ static int count=0; StaticKeyword(){count++;} public static void main(String[] args){ new StaticKeyword(); new StaticKeyword(); System.out.println(count);}}

@@ -1,0 +1,1 @@
+class ClassObjectDemo { int x=10; public static void main(String[] args){ ClassObjectDemo obj=new ClassObjectDemo(); System.out.println(obj.x);} }

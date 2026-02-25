@@ -1,0 +1,1 @@
+class Student{ int id; Student(int id){this.id=id;}} class ObjectArrayDemo{ public static void main(String[] args){ Student[] arr=new Student[3]; arr[0]=new Student(1); arr[1]=new Student(2); arr[2]=new Student(3); for(Student s:arr) System.out.println(s.id);}}

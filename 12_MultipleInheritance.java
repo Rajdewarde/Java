@@ -1,0 +1,1 @@
+interface A1{void show();} interface B1{void print();} class MultipleInheritance implements A1,B1{ public void show(){System.out.println("Interface A");} public void print(){System.out.println("Interface B");} public static void main(String[] args){ MultipleInheritance obj=new MultipleInheritance(); obj.show(); obj.print();}}

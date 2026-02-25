@@ -1,0 +1,1 @@
+class ParameterizedConstructor { int x; ParameterizedConstructor(int a){x=a;} public static void main(String[] args){ ParameterizedConstructor obj=new ParameterizedConstructor(50); System.out.println(obj.x);}}

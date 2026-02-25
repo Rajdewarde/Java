@@ -1,0 +1,1 @@
+class ThisKeyword{ int x; ThisKeyword(int x){this.x=x;} void show(){System.out.println(x);} public static void main(String[] args){ ThisKeyword obj=new ThisKeyword(30); obj.show();}}

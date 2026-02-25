@@ -1,0 +1,1 @@
+class EncapsulationDemo { private int x; public void setX(int x){this.x=x;} public int getX(){return x;} public static void main(String[] args){ EncapsulationDemo obj=new EncapsulationDemo(); obj.setX(25); System.out.println(obj.getX());}}
